@@ -78,7 +78,7 @@ github.com/xiaochengsky/golang-logger
     logs_test.go                                (package log)
 ```
 
-#### **3.1.1 添加依赖 **
+#### **3.1.1 添加依赖**
 1) 在当前工作目录(GOPATH外，如果GOPATH内，则设置GO111MODULE=on)下创建 go.mod 文件；
 $ cd <project path outside $GOPATH/src> 
 $ go mod init <project name>
@@ -155,7 +155,7 @@ nikkoyang@nikkoyang-LB0:~/GoProj/pkg/mod/github.com/xiaochengsky$ ls
 golang-logger@v0.0.0-20190903073016-7d1d2ef198e5
 ```
 
-#### **3.1.2 更新依赖(依赖包版本的切换) **
+#### **3.1.2 更新依赖(依赖包版本的切换)**
 我已将 logger 日志库的重新推送了新的 tag V2.0，现在准备把此工程的 logger 库版本从 v0.0.0 更新到新的 tag。<br>
 直接使用 go get <project address>@<tag>更新即可(也可以手动编辑 go.mod 文件的 require 项，重新 build 更新依赖)：
 ```
@@ -196,7 +196,7 @@ golang-logger@v2.0.1-0.20190903073016-7d1d2ef198e5+incompatible
 ```
 注：打 tag 时，还是要遵循 semver 规范。
 
-#### **3.1.3 删除(未使用的)依赖 **
+#### **3.1.3 删除(未使用的)依赖**
 使用 go mod tidy 即可：<br>
 1) 现将 import 和代码段全部注释：
 ```
@@ -264,7 +264,7 @@ log_test
 github.com/xiaochengsky/golang-logger v2.0.0+incompatible
 ```
 
-#### **3.1.4 多版本依赖 **
+#### **3.1.4 多版本依赖**
 现在我重新推送了一个新的版本（新增了一个 logger 文件夹, 并附带了 logger.go 文件夹），附加了新的 tag(v6.0.0)。<br>
 ```
 github.com/xiaochengsky/golang-logger
